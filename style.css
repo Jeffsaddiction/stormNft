@@ -125,6 +125,7 @@ html {
     justify-content: center;
     height: 82vh;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .avo {
@@ -178,7 +179,7 @@ h1 {
 }
 
 p {
-    font-family: fantasy;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-right: 5%;
     margin-left: 5%;
     font-size: 1.5rem;
@@ -187,6 +188,7 @@ p {
 .pay {
     background-color: rgb(255, 123, 0);
     font-family: 'stars';
+    color: black;
     font-size: 1.2rem;
     height: 5vh;
     width: 22vw;
