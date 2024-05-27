@@ -55,6 +55,7 @@ html {
     background-image: url("imagens/fundo.jpg");
     background-size: cover;
     background-position: center;
+    overflow-x: hidden;
 }
 
 .fotos {
