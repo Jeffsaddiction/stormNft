@@ -35,3 +35,51 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
 });
+
+const pai = document.querySelector(".pai");
+const antes = document.querySelector("#antes");
+const depois = document.querySelector("#depois");
+
+let pos = 1;
+antes.style.visibility = "hidden";
+
+depois.addEventListener("click", function () {
+
+    if (pos===1) {
+        pai.style.transform = "translate(-25%)";
+        antes.style.visibility = "visible";
+        pos = 2;
+    }
+   else if (pos===2) {
+        pai.style.transform = "translate(-50%)";
+        pos = 3;
+    }
+
+    else if (pos===3) {
+        pai.style.transform = "translate(-75%)";
+        depois.style.visibility = "hidden";
+        pos = 4;
+    }
+
+  });
+
+antes.addEventListener("click", function () {
+    
+    if (pos===2) {
+        pai.style.transform = "translate(0%)";
+        antes.style.visibility = "hidden";
+        depois.style.visibility = "visible";
+        pos = 1;
+    }
+   else if (pos===3) {
+        pai.style.transform = "translate(-25%)";
+        depois.style.visibility = "visible";
+        pos = 2;
+    }
+
+    else if (pos===4) {
+        pai.style.transform = "translate(-50%)";
+        depois.style.visibility = "visible";
+        pos = 3;
+    }
+  });
